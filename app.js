@@ -33,7 +33,7 @@ console.log("John's BMI is: " + johnBMI);
 
 var markHigherBMI = true;
 
-//for the second dateset, we follow a similar procedure
+//for the second date set, we follow a similar procedure
 
 var heightDenomMark_2 = markHeight_2 * markHeight_2;
 
