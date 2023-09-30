@@ -6,10 +6,10 @@ function calcBMI(weight_1,height_1,weight_2,height_2){
     var johnBMI = weight_2/heightDeno_2;
 
     if (markBMI > johnBMI){
-        return `Mark's BMI is higher than John's!`
+        return `Mark's BMI ${markBMI} is higher than John's ${(johnBMI)}!`
     }
     else{
-        return `John's BMI is higher than Mark's!`
+        return `John's BMI ${(johnBMI)} is higher than Mark's  ${markBMI}!`
     }
 
 }
