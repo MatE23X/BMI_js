@@ -1,51 +1,33 @@
-function calcBMI(name,weight,height){
-
-    heightDeno = height * height;
-    BMI = weight/ heightDeno;
-    if (name === 'Mark'){
-        BMI = markBMI;
-    }
-    else{
-        BMI = johnBMI;
-    }
+function calcBMI(weight_1,height_1,weight_2,height_2){
+    var heightDeno_1 = height_1 * height_1;
+    var heightDeno_2 = height_2 * height_2;
     
-    return BMI;
-}
+    var markBMI = weight_1/heightDeno_1;
+    var johnBMI = weight_2/heightDeno_2;
 
-function compareBMI(){
-    calcBMI();
-    if (markBMI>johnBMI){
-        console.log(`Mark's BMI is higher than John's!`)
+    if (markBMI > johnBMI){
+        return `Mark's BMI is higher than John's!`
     }
     else{
-       console.log(`John's BMI is higher than Mark's!`) 
+        return `John's BMI is higher than Mark's!`
     }
+
 }
 
-var mark = calcBMI('Mark', 78, 1.69);
-var john = calcBMI('John', 92, 1.95);
-var compare = compareBMI();
+console.log(calcBMI(78,1.69,92,1.95));
+console.log(calcBMI(95,1.88,85,1.76));
 
-console.log(`${mark}, ${john},${compare}`)
 
 
 
 // console.log("Mark has " + calcBMI('Mark',78,1.69) + " BMI");
-// console.log(compareBMI());
+
 // console.log("John has " + calcBMI('John',92,1.95) + " BMI");
-// markHigherBMI = true;
-// console.log(markHigherBMI);
+
 
 //for the second data set 
 
 // console.log("Mark has " + calcBMI(95,1.88) + " updated BMI");
 // console.log("John has " + calcBMI(85,1.76) + " updated BMI");
-// markHigherBMI = false;
-// console.log(markHigherBMI);
 
-// if (markBMI > johnBMI) {
-//     console.log(`Mark's BMI is higher than John's!`)
-// }
-// else{
-//     console.log(`John's BMI is higher than Mark's!`)
-// }
+
